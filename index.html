@@ -1,0 +1,334 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeesquads: A Great Clips Franchise Group</title>
+
+    <link rel="icon" type="image/png" href="/images/logo.png">
+
+    <!-- for Apple devices -->
+    <link rel="apple-touch-icon" href="/images/logo.png">
+
+    <link rel="stylesheet" href="/frontend/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!-- EmailJS -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "g3ZXBPM1Pgtopn1go",
+      });
+   })();
+</script>
+</head>
+<body>
+<!-- NavBar -->
+<nav class="navbar navbar-dark bg-green fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Zeesquads</a>
+    <button class="btn-primary show-form-btn">Tell me more!</button>
+  </div>
+</nav>
+
+ <!-- Black Section with Video Background -->
+<div class="section black" id="section1">
+  <!-- Video Background -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="/videos/example.mov" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!-- Gradient overlay -->
+  <div class="overlay"></div>
+
+  <!-- Logo at top center -->
+  <div class="logo-container">
+    <img src="/images/logo.png" alt="Zeesquads Logo" class="logo">
+  </div>
+
+  <!-- Black Section Frame -->
+  <div class="text" id="text1">
+    <h1 class="text-h1">Zeesquads</h1>
+    <p class="text-p">A Great Clips Franchise Group</p>
+  </div>
+  <div class="text" id="text2">
+    <p class="text-p-size">Ready to rock the hair-styling world with a team that's got your back?</p>
+    <ul class="text-p">
+        • Built-in clientele • Flexible schedules • Real growth • Great pay
+    </ul>
+    <button class="btn-size btn-primary show-form-btn">Tell me more!</button>
+    <p class="text-p">Now hiring licensed stylists and students.</p>
+  </div>
+</div>
+
+<!-- White Section Frame (hidden at first) -->
+<div class="section white" id="section2">
+<!-- First Part -->
+  <div class="white-content">
+    <div class="text-block">
+      <div class="sect-title" id="text3">Who we are</div>
+    <section id="about-us">
+        <div class="container">
+            <div class="about-content">
+                <h4 class="noline">ABOUT ZEESQUADS</h4>
+                <h1 class="box">Tell your website visitors who we are and why they should choose us.</h1>
+                <p class="info-box">We're Zeesquads — a Great Clips franchise group in Illinois and Ohio. We keep it simple: steady flow of clients, a drama-free, team-first culture, and leaders who invest in your growth. You bring the talent; we'll bring the opportunity.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="/images/logo.png" alt="" class="about-us-pic hidden">
+            </div>
+        </div>
+         <!-- chips list: uses semantic LIST for accessibility -->
+    <ul class="chips" role="list" aria-label="Company highlights">
+      <li class="chip" role="listitem">
+        <span class="chip__dot" aria-hidden="true"></span>
+        <span>Creativity</span>
+      </li>
+
+      <li class="chip" role="listitem">
+        <span class="chip__dot" aria-hidden="true"></span>
+        <span>Coaching &amp; feedback</span>
+      </li>
+
+      <li class="chip" role="listitem">
+        <span class="chip__dot" aria-hidden="true"></span>
+        <span>Clear career path</span>
+      </li>
+
+      <li class="chip" role="listitem">
+        <span class="chip__dot" aria-hidden="true"></span>
+        <span>Supportive leaders</span>
+      </li>
+    </ul>
+    </section>
+  </div>
+
+<!-- Second Part -->
+<div class="white-content">
+  <div class="test-title">Meet the squad</div>
+  <h4 class="text-pos">Real people. Real teamwork. Real careers.</h4> 
+
+  <section id="testimonial">
+    <button class="arrow left" onclick="prevTestimonial()">&#10094;</button>
+
+    <div class="slider" id="slider">
+      <!-- 1st testimonial -->
+      <div class="container">
+        <img src="/images/quote.png" alt="">
+        <h1>“I wish I'd joined sooner. Busy salons, helpful teammates, and I never worry about building a book.”</h1>
+        <div class="profile">
+          <img src="example.jpg" alt="" class="profile-ito">
+          <h4> — Ashley, Stylist</h4>
+        </div>
+      </div>
+
+      <!-- 2nd testimonial -->
+      <div class="container">
+        <img src="/images/quote.png" alt="">
+        <h1>“The coaching is legit. I've leveled up my skills and income.”</h1>
+        <div class="profile">
+          <img src="example.jpg" alt="" class="profile-ito">
+          <h4> — Miguel, Shift Lead</h4>
+        </div>
+      </div>
+
+      <!-- 3rd testimonial -->
+      <div class="container">
+        <img src="/images/quote.png" alt="">
+        <h1>“Schedules that fit my life and clients who actually come back.”</h1>
+        <div class="profile">
+          <img src="example.jpg" alt="" class="profile-ito">
+          <h4> — Tia, Stylist</h4>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right" onclick="nextTestimonial()">&#10095;</button>
+  </section>
+</div>
+
+<!-- Third Part -->
+<div class="white-content fade-up">
+  <h2>What's in it for you</h2>
+  <section class="perks-section">
+    <div class="pay-callouts">
+      <div><strong>Full-time Stylists:</strong><br>$27 - $30/hr avg<br>(tips + bonuses included)</div>
+      <div><strong>Part-time Stylists:</strong><br>$25 - $28/hr avg</div>
+      <div><strong>Leaders/Management:</strong><br>$30 - $35/hr avg</div>
+    </div>
+
+    <div class="benefits-list">
+      <span>Health benefits (FT)</span>
+      <span>Paid training</span>
+      <span>Flexible scheduling</span>
+      <span>Busy, walk-in flow</span>
+      <span>Career path to leadership</span>
+    </div>
+
+    <p class="note">Actual earnings vary by location, schedule, and client volume.</p>
+  </section>
+  <br>
+  <section class="cta-section" id="closing-cta">
+    <h2>This might be your moment.</h2>
+    <p>
+      If you love great haircuts, good people, and a growing paycheck, you’ll fit right in.
+    </p>
+    <button class="cta-btn show-form-btn">Join our team</button>
+  </section>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- Form -->
+<form id="bookingForm">
+  <div class="form-content">
+    <span id="closeForm" style="cursor:pointer;position:absolute;top:10px;right:15px;font-size:24px;font-weight:bold;">&times;</span>
+  <h2>Let's do this — tell us a bit about you.</h2>
+
+  <!-- Full Name -->
+  <label for="name">Full Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <!-- Email -->
+  <label for="email">Email Address:</label>
+  <input type="email" id="email" name="email" required>
+
+  <!-- Phone -->
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <!-- City -->
+  <label for="city">City:</label>
+  <input type="text" id="city" name="city" required>
+
+  <!-- State -->
+  <label for="state">State:</label>
+  <input type="text" id="state" name="state" required>
+
+ 
+<!-- Preferred locations -->
+<label>Preferred location(s):</label>
+<div class="checkbox-group">
+  <label class="checkbox">
+    <input type="radio" name="location" id="location" value="Huntley" required>
+    <span class="check"></span>
+    Huntley
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="location" id="location" value="Algonquin" required>
+    <span class="check"></span>
+    Algonquin
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="location" id="location" value="Carol Stream" required>
+    <span class="check"></span>
+    Carol Stream
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="location" id="location" value="Carpentersville" required>
+    <span class="check"></span>
+    Carpentersville
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="location" id="location" value="OH/IL Salons" required>
+    <span class="check"></span>
+    OH/IL Salons
+  </label>
+</div>
+
+  <!-- Ideal Schedule -->
+<label>Ideal Schedule:</label>
+<div class="checkbox-group" >
+  <label class="checkbox">
+   <input type="radio" name="ideal" id="sched" value="Full-Time" required>
+    <span class="check"></span>
+    Full-Time
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="ideal" id="sched" value="Part-Time" required>
+    <span class="check"></span>
+    Part-Time
+  </label>
+</div>
+
+  <!-- License Status -->
+  <label>License Status:</label><br>
+<div class="checkbox-group">
+  <label class="checkbox">
+   <input type="radio" name="license" id="license" value="Active Cosmetology" required>
+    <span class="check"></span>
+    Active Cosmetology
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="license" id="license" value="Barber License" required>
+    <span class="check"></span>
+    Barber License
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="license" id="license" value="Student - Still in school" required>
+    <span class="check"></span>
+    Student - Still in school 
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="license" id="license" value="Not Licensed" required>
+    <span class="check"></span>
+    Not Licensed
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="license" id="license" value="License Expired" required>
+    <span class="check"></span>
+    License Expired
+  </label>
+</div>
+
+  <!-- Availability -->
+  <label>Availability:</label><br>
+  <div class="checkbox-group">
+  <label class="checkbox">
+   <input type="radio" name="avail" id="avail" value="Ready to start" required>
+    <span class="check"></span>
+   Ready to start
+  </label>
+  <label class="checkbox">
+   <input type="radio" name="avail" id="avail" value="Keep me posted" required>
+    <span class="check"></span>
+    Keep me posted
+  </label>
+</div>
+
+  <!-- Consent -->
+  <div class="checkbox-group">
+    <label class="checkbox">
+    <input type="checkbox" name="consent" id="consent" value="Checked" required>
+    <span class="check"></span>
+    By providing my phone number, I agree to receive SMS updates and occasional recruiting messages from Zeesquads. Message frequency varies. Msg & data rates may apply. Text HELP to +1 855-329-5926 for help. Reply STOP to opt out at any time.
+  </label>
+  </div>
+
+  <!-- Submit button -->
+<button type="submit" class="submitBtn" id="submit">Submit application</button>
+  </div>
+
+</form>
+
+<!-- Thank you frame(for form) -->
+<div class="modal" id="thankYouModal">
+    <div class="modal-content">
+      <h2>Thanks! We'll reach out soon.</h2>
+      <button id="continueBtn">Continue</button>
+    </div>
+  </div>
+
+  <script src="/public/animation.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="/public/formShow.js"></script>
+  <script src="/public/testimonial.js"></script>
+</body>
+</html>
